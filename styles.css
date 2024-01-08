@@ -1,21 +1,23 @@
 @font-face {
   font-family: 'Readex Pro';
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-display: swap;
   src: local('Readex Pro'),
-       url('/fonts/awesome-l.woff2') format('woff2'),
-       url('/fonts/awesome-l.ttf') format('truetype'),
-  unicode-range: U+000-5FF; /* Latin glyphs */
+       url('/fonts/Readexpro[HEXP,wght].woff2') format('woff2'),
+       url('/fonts/Readexpro[HEXP,wght].woff') format('woff'),
+       url('/fonts/Readexpro[HEXP,wght].ttf') format('truetype'),
+  unicode-range: U+000-5FF;
 }
 @font-face {
   font-family: 'Roboto Mono';
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-display: swap;
   src: local('Roboto Mono'),
-       url('/fonts/awesome-l.woff2') format('woff2'),
-       url('/fonts/awesome-l.ttf') format('truetype'),
+       url('/fonts/RobotoMono-VariableFont_wght.woff2') format('woff2'),
+       url('/fonts/RobotoMono-VariableFont_wght.woff') format('woff'),
+       url('/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype'),
   unicode-range: U+000-5FF;
 }
 
