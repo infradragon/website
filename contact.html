@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset=utf-8>
+  <title>Infradragon</title>
+  <style>
+    :root {
+      color-scheme: dark
+    }
+  </style>
+  
+  <link rel="preload" href="styles.css" as="style" type="text/css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        file = elmnt.getAttribute("include-html");
+        if (file) {
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Unable to load navbar.";}
+              elmnt.removeAttribute("include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          return;
+        }
+      }
+    }
+  </script> 
+  <meta name="description" content="Find the nearest Rainforest Cafe restaurant to you and explore its location, menus and holiday hours. You can also order online, make reservations, view on map and get delivery options.">
+</head>
+<body>
+  <div include-html="static/navbar.html" class="navbar"></div>
+  <div class="body">
+    <a href="discordapp.com/users/580483129161154610" target="_blank" rel="noopener" rel="noreferrer">My Discord</a>
+  </div>
+  <script>
+    includeHTML();
+  </script> 
+</body>
+</html>
