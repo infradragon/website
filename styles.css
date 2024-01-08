@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Awesome Font'),
+  src: local('Readex Pro'),
        url('/fonts/awesome-l.woff2') format('woff2'),
        url('/fonts/awesome-l.ttf') format('truetype'),
   unicode-range: U+000-5FF; /* Latin glyphs */
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Awesome Font'),
+  src: local('Roboto Mono'),
        url('/fonts/awesome-l.woff2') format('woff2'),
        url('/fonts/awesome-l.ttf') format('truetype'),
   unicode-range: U+000-5FF;
