@@ -16,21 +16,21 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
-  <script>
-    function includeHTML() {
+  <script data-cfasync="false" src="/navbar-includer.js>
+    function includeNavbar() {
       var z, i, elmnt, file, xhttp;
       z = document.getElementsByTagName("*");
       for (i = 0; i < z.length; i++) {
         elmnt = z[i];
-        file = elmnt.getAttribute("include-html");
+        file = elmnt.getAttribute("include-navbar");
         if (file) {
           xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
             if (this.readyState == 4) {
               if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Unable to load navbar.";}
-              elmnt.removeAttribute("include-html");
-              includeHTML();
+              if (this.status == 404) {elmnt.innerHTML = "Unable to load navbar. idfk.";}
+              elmnt.removeAttribute("include-navbar");
+              includeNavbar();
             }
           }
           xhttp.open("GET", file, true);
@@ -43,12 +43,12 @@
   <meta name="description" content="Find the nearest Rainforest Cafe restaurant to you and explore its location, menus and holiday hours. You can also order online, make reservations, view on map and get delivery options.">
 </head>
 <body>
-  <div include-html="static/navbar.html" class="navbar"></div>
+  <div include-navbar="static/navbar.html" class="navbar"></div>
   <div class="body">
     <p>THIS WEBSITE SUCKS!!!</p>
   </div>
   <script>
-    includeHTML();
+    includeNavbar();
   </script> 
 </body>
 </html>
