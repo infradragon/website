@@ -1,92 +1,37 @@
-@font-face {
-  font-family: 'Readex Pro';
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: local('Readex Pro'),
-       url('/fonts/Readexpro[HEXP,wght].woff2') format('woff2'),
-       url('/fonts/Readexpro[HEXP,wght].woff') format('woff'),
-       url('/fonts/Readexpro[HEXP,wght].ttf') format('truetype'),
-  unicode-range: U+000-5FF;
-}
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: local('Roboto Mono'),
-       url('/fonts/RobotoMono-VariableFont_wght.woff2') format('woff2'),
-       url('/fonts/RobotoMono-VariableFont_wght.woff') format('woff'),
-       url('/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype'),
-  unicode-range: U+000-5FF;
-}
-
-
-body {
-  background-color: #1a1c1d;
-  margin: 0px;
-}
-p {
-  color: #e1f2ff;
-  font-family: Readex Pro;
-  font-weight: 500;
-  text-shadow: 0px 0px 3px #000000;
-  margin: 8px 0px;
-}
-a {
-  color: #86cffa;
-  text-decoration: none;
-  font-family: Readex Pro;
-  margin: 3px;
-}	
-a:hover {
-  text-decoration: underline; 
-  text-shadow: 0px 0px 3px #000000, 0px 0px 6px #1a1c1d;
-  color: #8ad1ff;
-}
-.navbar {
-  vertical-align: middle;
-  line-height: 35px;
-}
-header.navbar {
-  height: 35px;
-  background-color: #2c3134;
-  display: block;
-  vertical-align: middle;
-  line-height: 35px;
-  box-sizing: border-box;
-  padding: 0px 6px 0px 6px;
-}
-a.navbar {
-  margin: 3px 5px 3px 5px;
-  padding: 3px;
-  font-weight: 500;
-}
-a.navbar:active {
-  color: #193342;
-  padding: 2.3px;
-  text-shadow: 0px 0px 3px #c4e7ff, 0px 0px 6px #86cffa;
-  font-weight: 700;
-}
-.body {
-  margin: 12px 8px;
-}
-.chiplink {
-  color: #193342;
-  font-weight: 700;
-  background-color: #86cffa;
-  display: inline-block;
-  border-radius: 3px;
-  padding: 3px 5px 3px 5px;
-  margin: 0px 4px 12px 4px;
-}
-.chiplink:hover {
-  color: #000000;
-  background-color: #86cffa;
-  text-decoration: none;
-  font-family: Readex Pro;
-  border-radius: 3px;
-  padding: 3px 5px 3px 5px;
-  margin: 0px 4px 12px 4px;
-  text-shadow: 0px 0px 3px #ffffff, 0px 0px 6px #c4e7ff;
-}
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset=utf-8>
+  <title>Infradragon</title>
+  <meta name="theme-color" content="#1A1C1D">
+  <style>
+    :root {
+      color-scheme: dark;
+      background-color: "#1A1C1D";
+    }
+  </style>
+  
+  <link rel="preload" href="styles.css" as="style" type="text/css">
+  <link rel="preload" href="navbar-includer.js" as="script" type="text/javascript"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <script data-cfasync="false" src="/navbar-includer.js"></script>
+  <meta name="description" content="Find the nearest Rainforest Cafe restaurant to you and explore its location, menus and holiday hours. You can also order online, make reservations, view on map and get delivery options.">
+</head>
+<body>
+  <header include-navbar="static/navbar.html" class="navbar"></header>
+  <script>
+    includeNavbar();
+  </script> 
+  <div class="body">
+    <a class="chiplink" href="https://discordapp.com/users/580483129161154610" target="_blank" rel="noopener" rel="noreferrer">Discord</a><br>
+    <a class="chiplink" href="https://github.com/infradragon/infradragon" target="_blank" rel="noopener" rel="noreferrer">Github</a><br>
+    <a class="chiplink" href="https://steamcommunity.com/id/infradragon/" target="_blank" rel="noopener" rel="noreferrer">Steam</a><br>
+    <a class="chiplink" href="https://www.pixiv.net/en/users/94852945" target="_blank" rel="noopener" rel="noreferrer">Pixiv</a>
+  </div>
+</body>
+</html>
