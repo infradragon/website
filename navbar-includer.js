@@ -4,7 +4,7 @@ const includeNavbar = () => {
 		.then((t) => (document.querySelector("header > nav").innerHTML = t))
 		.catch(
 			(_) =>
-				(document.querySelectorAll("header > nav").textContent =
+				(document.querySelector("header > nav").textContent =
 					"Unable to load navbar. idfk.")
 		)
 }
