@@ -84,3 +84,9 @@ a.navbar:active {
   font-family: Readex Pro;
   text-shadow: 0px 0px 3px #ffffff, 0px 0px 6px #c4e7ff;
 }
+.chiplink:active {
+  color: #c4e7ff;
+  text-decoration: none;
+  font-family: Readex Pro;
+  text-shadow: 0px 0px 4px #000000, 0px 0px 8px #193342;
+}
