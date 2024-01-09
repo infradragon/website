@@ -1,10 +1,10 @@
 const includeNavbar = () => {
 	fetch("static/navbar.html")
 		.then((t) => t.text())
-		.then((t) => (document.querySelector("header > nav").innerHTML = t))
+		.then((t) => (document.querySelector(".navbar").innerHTML = t))
 		.catch(
 			(_) =>
-				(document.querySelector("header > nav").textContent =
+				(document.querySelector(".navbar").textContent =
 					"Unable to load navbar. idfk.")
 		)
 }
