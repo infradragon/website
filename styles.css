@@ -76,7 +76,7 @@ a:active {
   color: #000000;
   text-decoration: none;
   font-family: Readex Pro;
-  text-shadow: 0em 0pem 0.125em #ffffff, 0em 0em 0.25em #c4e7ff;
+  text-shadow: 0em 0em 0.333em #ffffff, 0em 0em 0.667em #c4e7ff;
 }
 .chiplink:active {
   color: #c4e7ff;
