@@ -24,6 +24,9 @@ body {
   background-color: #1a1c1d;
   margin: 0px;
 }
+.body {
+  margin: 12px 8px;
+}
 p {
   color: #e1f2ff;
   font-family: Readex Pro;
@@ -42,6 +45,11 @@ a:hover {
   text-shadow: 0px 0px 3px #000000, 0px 0px 6px #1a1c1d;
   color: #8ad1ff;
 }
+.a:active {
+  color: #193342;
+  padding: 2.3px;
+  text-shadow: 0px 0px 3px #c4e7ff, 0px 0px 6px #86cffa;
+}
 .navbar {
   vertical-align: middle;
   line-height: 35px;
@@ -57,14 +65,6 @@ a:hover {
   margin: 3px 5px 3px 5px;
   padding: 3px;
   font-weight: 500;
-}
-.nav-item:active {
-  color: #193342;
-  padding: 2.3px;
-  text-shadow: 0px 0px 3px #c4e7ff, 0px 0px 6px #86cffa;
-}
-.body {
-  margin: 12px 8px;
 }
 .chiplink {
   color: #193342;
