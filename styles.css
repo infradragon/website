@@ -35,7 +35,7 @@ a {
   color: #86cffa;
   text-decoration: none;
   font-family: Readex Pro;
-  margin: 3px;
+  margin: 8px 0px;
 }	
 a:hover {
   text-decoration: underline; 
@@ -62,7 +62,6 @@ a:hover {
   color: #193342;
   padding: 2.3px;
   text-shadow: 0px 0px 3px #c4e7ff, 0px 0px 6px #86cffa;
-  font-weight: 700;
 }
 .body {
   margin: 12px 8px;
