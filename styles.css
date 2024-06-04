@@ -38,18 +38,18 @@ p {
   margin: 0.33em 0em;
 }
 .rainbow {
-  background: linear-gradient(to right, oklch(75.01% 0.175 0), oklch(75.01% 0.175 10), oklch(75.01% 0.175 20), oklch(75.01% 0.175 30), oklch(75.01% 0.175 40), oklch(75.01% 0.175 50), oklch(75.01% 0.175 60), oklch(75.01% 0.175 70), oklch(75.01% 0.175 80), oklch(75.01% 0.175 90), oklch(75.01% 0.175 100), oklch(75.01% 0.175 110), oklch(75.01% 0.175 120), oklch(75.01% 0.175 130), oklch(75.01% 0.175 140), oklch(75.01% 0.175 150), oklch(75.01% 0.175 160), oklch(75.01% 0.175 170), oklch(75.01% 0.175 180), oklch(75.01% 0.175 190), oklch(75.01% 0.175 200), oklch(75.01% 0.175 210), oklch(75.01% 0.175 220), oklch(75.01% 0.175 230), oklch(75.01% 0.175 240), oklch(75.01% 0.175 250), oklch(75.01% 0.175 260), oklch(75.01% 0.175 270), oklch(75.01% 0.175 280), oklch(75.01% 0.175 290), oklch(75.01% 0.175 300), oklch(75.01% 0.175 310), oklch(75.01% 0.175 320), oklch(75.01% 0.175 330), oklch(75.01% 0.175 340), oklch(75.01% 0.175 350));
+  background: repeating-linear-gradient(to right, oklch(75.01% 0.175 0), oklch(75.01% 0.175 10), oklch(75.01% 0.175 20), oklch(75.01% 0.175 30), oklch(75.01% 0.175 40), oklch(75.01% 0.175 50), oklch(75.01% 0.175 60), oklch(75.01% 0.175 70), oklch(75.01% 0.175 80), oklch(75.01% 0.175 90), oklch(75.01% 0.175 100), oklch(75.01% 0.175 110), oklch(75.01% 0.175 120), oklch(75.01% 0.175 130), oklch(75.01% 0.175 140), oklch(75.01% 0.175 150), oklch(75.01% 0.175 160), oklch(75.01% 0.175 170), oklch(75.01% 0.175 180), oklch(75.01% 0.175 190), oklch(75.01% 0.175 200), oklch(75.01% 0.175 210), oklch(75.01% 0.175 220), oklch(75.01% 0.175 230), oklch(75.01% 0.175 240), oklch(75.01% 0.175 250), oklch(75.01% 0.175 260), oklch(75.01% 0.175 270), oklch(75.01% 0.175 280), oklch(75.01% 0.175 290), oklch(75.01% 0.175 300), oklch(75.01% 0.175 310), oklch(75.01% 0.175 320), oklch(75.01% 0.175 330), oklch(75.01% 0.175 340), oklch(75.01% 0.175 350));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: rainbow_animation 4s linear infinite normal;
+  animation: rainbow-anim 3s linear infinite normal;
   background-size: 400% 100%;
   font-weight: 700;
 }
 
-@keyframes rainbow_animation {
-  0%,100% { background-position: 0 0; }
-  50%     { background-position: 100% 0; }
+@keyframes rainbow-anim {
+  0%   {transform: translateX(0);}
+  100% {transform: translateX(50%);}
 }
 h3 {
   color: #e1f2ff;
