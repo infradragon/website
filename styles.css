@@ -42,7 +42,7 @@ p {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: rainbow_animation 4s linear infinite;
+  animation: rainbow_animation 4s linear infinite normal;
   background-size: 400% 100%;
   font-weight: 700;
 }
