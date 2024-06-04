@@ -48,8 +48,8 @@ p {
 }
 
 @keyframes rainbow-anim {
-  0%   { background-position: 0 0; }
-  100% { background-position: 200% 0; }
+  50%     { background-position: 0 0; }
+  100%,0% { background-position: 200% 0; }
 }
 h3 {
   color: #e1f2ff;
