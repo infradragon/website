@@ -46,7 +46,9 @@ p {
   background-size: 400% 100%;
   font-weight: 700;
 }
-
+.colon-three {
+  font-size: 69em;
+}
 @keyframes rainbow-anim {
   50%     { background-position: 0 0; }
   100%,0% { background-position: 200% 0; }
