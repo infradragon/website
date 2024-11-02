@@ -140,7 +140,6 @@ a {
   color: var(--accent-a2);
   text-decoration: none;
   font-family: Readex Pro;
-  margin: 0.33em 0em;
   font-size: 1em;
 }
 a:hover {
@@ -170,6 +169,13 @@ a:active {
   padding: 0.25em;
   font-weight: 500;
 }
+.chiplink-container{
+  display: flex;
+  gap: 1em 0.75em;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline safe;
+}
 .chiplink {
   color: var(--accent-a0);
   font-weight: 700;
@@ -177,7 +183,7 @@ a:active {
   display: inline-block;
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
-  margin: 0em 0.25em 0.75em 0.25em;
+  flex-basis: fit-content;
 }
 .chiplink:hover {
   color: var(--tone-0);
