@@ -20,18 +20,77 @@
        url('/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
   unicode-range: U+000-5FF;
 }
+:root {
+  --tone-p0: #000000;
+  --tone-p1: #ffffff;
+  --tone-0: #1a1c1d;
+  --tone-1: #2c3134;
+  --tone-2: #40484e;
+  --tone-3: #536069;
+  --tone-4: #899298;
+  --tone-5: #a2adb5;
+  --tone-6: #bbc8d2;
+  --tone-7: #e1f2ff;
+  --accent-a0: #193342;
+  --accent-a1: #164c65;
+  --accent-a2: #86cffa;
+  --accent-a3: #c4e7ff;
+  --accent-b0: #2e2e47;
+  --accent-b1: #43426e;
+  --accent-b2: #c2c1ff;
+  --accent-b3: #e2dfff;
+  --accent-c0: #133630;
+  --accent-c1: #035047;
+  --accent-c2: #76d7c6;
+  --accent-c3: #81f6e2;
+  --error-0: #462731;
+  --error-1: #6a3748;
+  --error-2: #ffb0c8;
+  --error-3: #ffd9e2;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --tone-p0: #ffffff;
+    --tone-p1: #000000;
+    --tone-0: #eae2d1;
+    --tone-1: #cdc6b8;
+    --tone-2: #b1ab9e;
+    --tone-3: #959086;
+    --tone-4: #615e58;
+    --tone-5: #494642;
+    --tone-6: #32302d;
+    --tone-7: #0c0b0b;
+    --accent-a0: #ffe08c;
+    --accent-a1: #dfc47b;
+    --accent-a2: #544516;
+    --accent-a3: #392f12;
+    --accent-b0: #ffcaa7;
+    --accent-b1: #ffb193;
+    --accent-b2: #6c3927;
+    --accent-b3: #49281c;
+    --accent-c0: #b9f2a4;
+    --accent-c1: #a3d490;
+    --accent-c2: #2e4e24;
+    --accent-c3: #22351b;
+    --error-0: #ffdbd1;
+    --error-1: #ffb4a1;
+    --error-2: #920700;
+    --error-3: #630f00;
+  }
+}
+
 * {
   min-width: 0;
 }
 body {
-  background-color: #1a1c1d;
+  background-color: var(--tone-0);
   margin: 0em;
 }
 .body {
   margin: 1em 0.75em;
 }
 p {
-  color: #e1f2ff;
+  color: var(--tone-7);
   font-family: Readex Pro;
   font-weight: 500;
   font-size: 1em;
@@ -69,14 +128,14 @@ p {
   100%,0% { background-position: 200% 0; }
 }
 h3 {
-  color: #e1f2ff;
+  color: var(--tone-7);
   font-family: Readex Pro;
   font-weight: 700;
   margin: 1em 0em;
   font-size: 1.25em;
 }
 a {
-  color: #86cffa;
+  color: var(--accent-a2);
   text-decoration: none;
   font-family: Readex Pro;
   margin: 0.33em 0em;
@@ -84,7 +143,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  text-shadow: 0em 0em 0.333em #000000, 0em 0em 0.667em #1a1c1d;
+  text-shadow: 0em 0em 0.333em var(--tone-p0), 0em 0em 0.667em var(--tone-0);
   color: #8ad1ff;
 }
 a:active {
@@ -93,7 +152,7 @@ a:active {
 .navbar {
   line-height: 2em;
   height: 2em;
-  background-color: #2c3134;
+  background-color: var(--tone-1);
   display: block;
   box-sizing: border-box;
   padding: 0em 0.5em 0em 0.5em;
@@ -102,7 +161,7 @@ a:active {
   position: sticky;
   top: 0; 
   z-index: 100;
-  box-shadow: 0em 0.5em 0.5em #1a1c1d;
+  box-shadow: 0em 0.5em 0.5em var(--tone-0);
 }
 .nav-item {
   margin: 0.25em;
@@ -110,24 +169,24 @@ a:active {
   font-weight: 500;
 }
 .chiplink {
-  color: #193342;
+  color: var(--accent-a0);
   font-weight: 700;
-  background-color: #86cffa;
+  background-color: var(--accent-a2);
   display: inline-block;
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
   margin: 0em 0.25em 0.75em 0.25em;
 }
 .chiplink:hover {
-  color: #000000;
+  color: var(--tone-0);
   text-decoration: none;
   font-family: Readex Pro;
-  text-shadow: 0em 0em 0.333em #ffffff, 0em 0em 0.667em #c4e7ff;
+  text-shadow: 0em 0em 0.333em var(--tone-7), 0em 0em 0.667em var(--accent-a3);
 }
 .chiplink:active {
-  color: #c4e7ff;
+  color: var(--accent-a3);
   text-decoration: none;
   font-family: Readex Pro;
-  text-shadow: 0em 0em 0.333em #000000, 0em 0em 0.667em #193342;
-  background-color: #164c65;
+  text-shadow: 0em 0em 0.333em var(--tone-0), 0em 0em 0.667em var(--accent-a0);
+  background-color: var(--accent-a1);
 }
