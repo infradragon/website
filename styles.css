@@ -101,6 +101,7 @@ a:active {
   position: sticky;
   top: 0; 
   z-index: 100;
+  box-shadow: 0em 1em 0.8em #1a1c1d;
 }
 .nav-item {
   margin: 0.25em;
