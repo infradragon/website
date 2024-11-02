@@ -45,7 +45,7 @@ p {
   align-items: flex-start;
   gap: 1em;
 }
-img {
+.img-flex {
   flex-basis: fit-content;
   max-width: 50vh;
 }
