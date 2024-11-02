@@ -21,6 +21,7 @@
   unicode-range: U+000-5FF;
 }
 :root {
+  color-scheme: dark;
   --tone-p0: #000000;
   --tone-p1: #ffffff;
   --tone-0: #1a1c1d;
@@ -50,6 +51,7 @@
 }
 @media (prefers-color-scheme: light) {
   :root {
+    color-scheme: light;
     --tone-p0: #ffffff;
     --tone-p1: #000000;
     --tone-0: #eae2d1;
