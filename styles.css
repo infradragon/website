@@ -98,6 +98,8 @@ a:active {
   display: block;
   box-sizing: border-box;
   padding: 0em 0.5em 0em 0.5em;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 .nav-item {
   margin: 0.25em;
