@@ -5,19 +5,17 @@
   font-display: swap;
   src: local('Readex Pro'),
        url('/fonts/Readexpro[HEXP,wght].woff2') format('woff2'),
-       url('/fonts/Readexpro[HEXP,wght].woff') format('woff'),
        url('/fonts/Readexpro[HEXP,wght].ttf') format('truetype');
   unicode-range: U+000-5FF;
 }
 @font-face {
-  font-family: 'Roboto Mono';
+  font-family: 'Commit Mono';
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: local('Roboto Mono'),
-       url('/fonts/RobotoMono-VariableFont_wght.woff2') format('woff2'),
-       url('/fonts/RobotoMono-VariableFont_wght.woff') format('woff'),
-       url('/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  src: local('Commit Mono'),
+       url('/fonts/CommitMono_VariableFont.woff2') format('woff2'),
+       url('/fonts/CommitMono_VariableFont.ttf') format('truetype');
   unicode-range: U+000-5FF;
 }
 :root {
@@ -87,22 +85,19 @@
 body {
   background-color: var(--tone-0);
   margin: 0em;
+  font-family: Readex Pro;
+  font-weight: 500;
+  font-size: 1em;
 }
 .body {
   margin: 1em 0.75em;
 }
 p {
   color: var(--tone-7);
-  font-family: Readex Pro;
-  font-weight: 500;
-  font-size: 1em;
   margin: 0.33em 0em;
 }
 ul {
   color: var(--tone-7);
-  font-family: Readex Pro;
-  font-weight: 500;
-  font-size: 1em;
   padding-left: 2em;
 }
 ul li {
@@ -141,7 +136,6 @@ ul li {
 }
 h3 {
   color: var(--tone-7);
-  font-family: Readex Pro;
   font-weight: 700;
   margin: 1em 0em;
   font-size: 1.25em;
@@ -149,8 +143,6 @@ h3 {
 a {
   color: var(--accent-a2);
   text-decoration: none;
-  font-family: Readex Pro;
-  font-size: 1em;
 }
 a:hover {
   text-decoration: underline;
@@ -177,7 +169,6 @@ a:active {
 .nav-item {
   margin: 0.25em;
   padding: 0.25em;
-  font-weight: 500;
 }
 .chiplink-container{
   display: flex;
@@ -198,13 +189,11 @@ a:active {
 .chiplink:hover {
   color: var(--tone-0);
   text-decoration: none;
-  font-family: Readex Pro;
   text-shadow: 0em 0em 0.333em var(--tone-7), 0em 0em 0.667em var(--accent-a3);
 }
 .chiplink:active {
   color: var(--accent-a3);
   text-decoration: none;
-  font-family: Readex Pro;
   text-shadow: 0em 0em 0.333em var(--tone-0), 0em 0em 0.667em var(--accent-a0);
   background-color: var(--accent-a1);
 }
