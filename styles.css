@@ -13,8 +13,7 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: local('Commit Mono'),
-       url('/fonts/CommitMono_VariableFont.woff2') format('woff2'),
+  src: url('/fonts/CommitMono_VariableFont.woff2') format('woff2'),
        url('/fonts/CommitMono_VariableFont.ttf') format('truetype');
   unicode-range: U+000-5FF;
 }
@@ -139,7 +138,7 @@ h3 {
   font-weight: 700;
   margin: 1em 0em;
   font-size: 1.25em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
 }
 a {
   color: var(--accent-a2);
