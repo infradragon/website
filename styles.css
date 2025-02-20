@@ -87,7 +87,7 @@ body {
   margin: 0em;
   font-family: Readex Pro;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1rem;
 }
 .body {
   margin: 1em 0.75em;
@@ -139,6 +139,7 @@ h3 {
   font-weight: 700;
   margin: 1em 0em;
   font-size: 1.25em;
+  letter-spacing: 0.05em;
 }
 a {
   color: var(--accent-a2);
