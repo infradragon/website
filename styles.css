@@ -147,10 +147,10 @@ a {
 a:hover {
   text-decoration: underline;
   text-shadow: 0em 0em 0.333em var(--tone-p0), 0em 0em 0.667em var(--tone-0);
-  color: #8ad1ff;
+  color: var(--accent-a2);
 }
 a:active {
-  color: #e1f2ff;
+  color: var(--tone-7);
 }
 .navbar {
   line-height: 2em;
