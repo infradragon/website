@@ -127,7 +127,6 @@ ul li {
   animation: rainbow-anim 3s linear infinite normal;
   background-size: 400% 100%;
   font-weight: 700;
-  display: inline-block;
 }
 @keyframes rainbow-anim {
   50%     { background-position: 0 0; }
