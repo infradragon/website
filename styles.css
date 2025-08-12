@@ -200,3 +200,8 @@ a:active {
   text-shadow: 0em 0em 0.333em var(--tone-0), 0em 0em 0.667em var(--accent-a0);
   background-color: var(--accent-a1);
 }
+.guestbook {
+  width: 100%;
+  height: calc(100vh - 2em - 4px);
+  border-style: none;
+}

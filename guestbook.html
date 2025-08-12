@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset=utf-8>
+  <title>infradragon</title>
+  <meta name="theme-color" content="#1A1C1D">
+  <meta name="color-scheme" content="dark light">
+  <style>
+    :root {
+      background-color: var(--tone-0);
+    }
+  </style>
+  
+  <link rel="preload" href="styles.css" as="style" type="text/css">
+  <link rel="preload" href="navbar-includer.js" as="script" type="text/javascript"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <script data-cfasync="false" src="/navbar-includer.js"></script>
+  <meta name="description" content="the guesbook">
+</head>
+<body>
+  <header class="navbar"></header>
+  <script type="text/javascript">includeNavbar();</script>
+  <iframe name="guestbook" class="guestbook" loading="eager" src="https://infradragon.atabook.org/"></iframe>
+</body>
+</html>
